@@ -30,29 +30,11 @@ if ($encrypted['status']) {
     echo "Error: " . $encrypted['message'];
 }
 ```
-OR
-```
-$encrypted = PHED::hide("Your sensitive data", "key", "encrypt");
-if ($encrypted['status']) {
-    echo "Encrypted Data: " . $encrypted['data'];
-} else {
-    echo "Error: " . $encrypted['message'];
-}
-```
 
 * Decrypting a String:
 To decrypt the previously encrypted string, use the make method with the de or decrypt action.
 ```
 $decrypted = PHED::make($encrypted['data'], "decrypt");
-if ($decrypted['status']) {
-    echo "Decrypted Data: " . $decrypted['data'];
-} else {
-    echo "Error: " . $decrypted['message'];
-}
-```
-OR
-```
-$decrypted = PHED::hide($encrypted['data'], "key", "decrypt");
 if ($decrypted['status']) {
     echo "Decrypted Data: " . $decrypted['data'];
 } else {
