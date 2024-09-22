@@ -14,12 +14,6 @@ You can set a custom encryption key using the key method.
 PHED::key("my_custom_key");
 ```
 
-* Setting a Encryption salt:
-You can set a custom encryption salt using the salt method.
-```
-PHED::salt("my_custom_salt");
-```
-
 * Encrypting a String:
 To encrypt a string, use the make method and pass the string and the action (en, encrypt, or enc).
 ```
