@@ -11,13 +11,13 @@ PHED is a PHP Encryption and Decryption Library
 * Setting a Custom Key:
 You can set a custom encryption key using the key method.
 ```
-phed::key("my_custom_key");
+PHED::key("my_custom_key");
 ```
 
 * Setting a Encryption salt:
 You can set a custom encryption salt using the salt method.
 ```
-phed::salt("my_custom_salt");
+PHED::salt("my_custom_salt");
 ```
 
 * Encrypting a String:
